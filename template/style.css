@@ -1,0 +1,61 @@
+/*
+ * Author: Joo Nath
+ * Version: 0.2b (BETA VERSION)
+ * Webpage: https://joo-nath.cf/
+ * All rights reserved.
+ */
+@charset "ISO-8859-1";
+ 
+body{
+	background-color: #eee;
+}
+
+.wrap{
+	position: relative;
+}
+
+.clear{
+	clear: both;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.container{
+	background-color: white;
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 10px 20px 10px 20px;
+}
+
+#login {
+    top: 50%;
+    left: 50%;
+    width:25em;
+    height:22em;
+    margin-top: -12em; /* -(height/2) */
+    margin-left: -12.5em; /* -(width/2) */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position:fixed;
+}
+
+* {
+	font-family: Roboto;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.pass, .publishing {
+	display:inline-block;
+	float:left;
+}
+
+.pass {
+	padding-left:1em;
+}
+
+pre {
+	font-family: monospace !important;
+}
