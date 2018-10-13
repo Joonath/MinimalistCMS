@@ -8,7 +8,7 @@ MinimalistCMS (former Joo-Nath Engine) is a self-build prototype of CMS. The pro
 MinimalistCMS can be running with PHP at least 5.x and later, and MySQL. Using XAMPP is recommended.
 
 ## SQL/Database Structure?
-TBA
+[Click Here](db.sql)
 
 ## Known Bugs
 MinimalistCMS currently in alpha stage, means any bugs is likely to be found, both UX and UI. Here's known bugs by contributor:
