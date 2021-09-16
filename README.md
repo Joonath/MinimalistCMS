@@ -1,8 +1,8 @@
 # MinimalistCMS
-Blog-styled CMS with standard core features and known bugs.
+Blog-styled CMS with standard core features.
 
 ## About MinimalistCMS
-MinimalistCMS (former Joo-Nath Engine) is a self-build prototype of CMS. The project is intended for educational purposes, in learning of PHP, little bit of jQuery and MySQL.
+MinimalistCMS is a prototype to Content Management System, built by myself. The project is intended for educational purposes, in learning of PHP, little bit of jQuery and MySQL.
 
 ## Specification
 MinimalistCMS can be running with PHP at least 5.x and later, and MySQL. Using XAMPP is recommended.
