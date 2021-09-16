@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2018 at 10:33 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Generation Time: Sep 16, 2021 at 03:00 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `joo-nath`
+-- Database: `cmscek`
 --
 
 -- --------------------------------------------------------
@@ -35,9 +35,9 @@ CREATE TABLE `articles` (
   `Category` int(11) DEFAULT NULL,
   `summary` text NOT NULL,
   `post_date` varchar(100) DEFAULT '',
-  `revision_count` int(11) DEFAULT '0',
+  `revision_count` int(11) DEFAULT 0,
   `article_password` varchar(100) DEFAULT '',
-  `status` int(11) DEFAULT '1',
+  `status` int(11) DEFAULT 1,
   `token` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -52,6 +52,14 @@ CREATE TABLE `category` (
   `CategoryName` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`CategoryID`, `CategoryName`) VALUES
+(3, 'Tech'),
+(4, 'Others');
+
 -- --------------------------------------------------------
 
 --
@@ -63,6 +71,16 @@ CREATE TABLE `pub_stat` (
   `statusName` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `pub_stat`
+--
+
+INSERT INTO `pub_stat` (`status`, `statusName`) VALUES
+(1, 'Publish'),
+(2, 'Draft'),
+(3, 'Protected'),
+(4, 'Private');
+
 -- --------------------------------------------------------
 
 --
@@ -73,6 +91,13 @@ CREATE TABLE `roles` (
   `RoleID` int(11) NOT NULL,
   `RoleName` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`RoleID`, `RoleName`) VALUES
+(1, 'admin');
 
 -- --------------------------------------------------------
 
@@ -87,9 +112,9 @@ CREATE TABLE `temp_article` (
   `Category` int(11) DEFAULT NULL,
   `summary` text NOT NULL,
   `post_date` varchar(100) DEFAULT '',
-  `revision_count` int(11) DEFAULT '0',
+  `revision_count` int(11) DEFAULT 0,
   `article_password` varchar(100) DEFAULT '',
-  `status` int(11) DEFAULT '1',
+  `status` int(11) DEFAULT 1,
   `token` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -105,6 +130,13 @@ CREATE TABLE `users` (
   `password` varchar(100) NOT NULL,
   `role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `username`, `password`, `role`) VALUES
+(1, 'admin', 'e5c2c41f3a568106e6a387ad28a0261e783a7aa2db7343ac438bb6bda9a70f5f', 1);
 
 -- --------------------------------------------------------
 
@@ -174,13 +206,13 @@ ALTER TABLE `versionlist`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `ArticleID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ArticleID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `CategoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `CategoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `roles`
