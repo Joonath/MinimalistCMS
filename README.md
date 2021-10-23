@@ -1,5 +1,5 @@
 # Deprecated: Discountinued Development
-It has been a very long while since the last time I developed this project. Many things occured during all these years, being a college student with all of its business. Due to the insufficiency of the time I had all these times, **I decided to discontinue the development of MinimalistCMS repository.** Thank you for the considerations.
+It has been a very long while since the last time I developed this project. Many things occurred during all these years, being a college student with all of its business. Due to the insufficiency of the time I had all these times, **I decided to discontinue the development of MinimalistCMS repository.** I am sorry for such inconvenience of this repository you may have to deal with. 
 
 # MinimalistCMS
 Blog-styled CMS with standard core features.
